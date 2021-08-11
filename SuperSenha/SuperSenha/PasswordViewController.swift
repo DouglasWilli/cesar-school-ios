@@ -39,9 +39,9 @@ class PasswordViewController: UIViewController {
     }
 
     @IBAction func generatePasswordsAgain(_ sender: UIButton) {
-        // posiciona a scroll no topo da view
+        
         tvPasswords.scrollRangeToVisible(NSRange(location: 0, length: 0))
-        tvPasswords.text = "" // limpa a view
+        tvPasswords.text = ""
 
         let passwords = passwordGenerator.generate(total: numberOfPasswords)
         for password in passwords {
